@@ -10,8 +10,6 @@ function App() {
   <ThemeProvider theme={defaultTheme}>
     <GlobalStyle />
       <Router />
-
-    
   </ThemeProvider>
   )
 }
