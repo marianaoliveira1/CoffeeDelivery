@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 import IntroBackgroundImg from '../../../../assets/intro-background.png'
 import { rgba } from 'polished'
+import { TitleText } from "../../../../components/Typorgrapgy";
 
 export const IntroContainer = styled.section`
     width: 100%;
@@ -20,4 +21,8 @@ export const IntroContent = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+`;
+
+export const IntroTitle = styled(TitleText)`
+  margin-bottom: 1rem;
 `;

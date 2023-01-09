@@ -1,6 +1,7 @@
-import { IntroContainer, IntroContent } from "./styles";
+import { IntroContainer, IntroContent, IntroTitle } from "./styles";
 
 import LogoCoffe from '../../../../assets/intro-img.png'
+import { RegularText } from "../../../../components/Typorgrapgy";
 
 export function Intro() {
     return(
@@ -8,10 +9,14 @@ export function Intro() {
             <IntroContent className="container">
                 <div>
                     <section>
-                        
+                        <IntroTitle size="xl">
+                            Encontre o café perfeito
+                            para qualquer hora do dia
+                        </IntroTitle>
+                        <RegularText size="l" color="subtitle" as="h3">
+                            Com o Coffee Delivery você recebe seu café onde estiver, a qualquer hora
+                        </RegularText>
                     </section>
-                    <h1>Encontre o café perfeito <br />para qualquer hora do dia</h1>
-                    <p>Com o Coffee Delivery você recebe seu café onde estiver, <br /> a qualquer hora </p>
                 </div>
                 <img src={LogoCoffe} alt="cafe logo" />
             </IntroContent>
