@@ -1,4 +1,4 @@
-import { IntroContainer, IntroContent, IntroTitle } from "./styles";
+import { BenefitsContainer, IntroContainer, IntroContent, IntroTitle } from "./styles";
 
 import LogoCoffe from '../../../../assets/intro-img.png'
 import { RegularText } from "../../../../components/Typorgrapgy";
@@ -17,6 +17,9 @@ export function Intro() {
                             Com o Coffee Delivery você recebe seu café onde estiver, a qualquer hora
                         </RegularText>
                     </section>
+                    <BenefitsContainer>
+                        <p>Beneficio</p>
+                    </BenefitsContainer>
                 </div>
                 <img src={LogoCoffe} alt="cafe logo" />
             </IntroContent>
