@@ -1,9 +1,25 @@
-import { BenefitsContainer, IntroContainer, IntroContent, IntroTitle } from "./styles";
+import { 
+    BenefitsContainer, 
+    IntroContainer, 
+    IntroContent, 
+    IntroTitle 
+} from "./styles";
 
 import LogoCoffe from '../../../../assets/intro-img.png'
 import { RegularText } from "../../../../components/Typorgrapgy";
 
+import { 
+    ShoppingCart,
+    Package, 
+    Timer, 
+    Coffee 
+} from "phosphor-react";
+import { useTheme } from "styled-components";
+import { InfoWithIcon } from "../../../../components/InfoWithIcon";
+
 export function Intro() {
+    const { colors } = useTheme();
+
     return(
         <IntroContainer>
             <IntroContent className="container">
@@ -18,7 +34,26 @@ export function Intro() {
                         </RegularText>
                     </section>
                     <BenefitsContainer>
-                        <p>Beneficio</p>
+                        <InfoWithIcon
+                            iconBg={colors["brand-yellow-dark"]}
+                            icon= {<ShoppingCart width="fill" />}
+                            text="Compra simples e segura"
+                        />
+                        <InfoWithIcon
+                            iconBg={colors["base-text"]}
+                            icon={<Package weight="fill" />}
+                            text="Embalagem mantém o café intacto"
+                        />
+                        <InfoWithIcon
+                            iconBg={colors["brand-yellow"]}
+                            icon={<Timer weight="fill" />}
+                            text="Entrega rápida e rastreada"
+                        />
+                        <InfoWithIcon
+                            iconBg={colors["brand-purple"]}
+                            icon={<Coffee weight="fill" />}
+                            text="O café chega fresquinho até você"
+                        />
                     </BenefitsContainer>
                 </div>
                 <img src={LogoCoffe} alt="cafe logo" />
