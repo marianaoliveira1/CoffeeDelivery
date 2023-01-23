@@ -14,7 +14,7 @@ export const CoffeeCardContainer = styled.div`
   img {
     width: 7.5rem;
     height: 7.5rem;
-    margin-top: -1.25rem;
+    margin-top: -1.35rem;
   }
 `;
 
